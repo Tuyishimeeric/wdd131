@@ -1,0 +1,123 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    max-width: 10%;
+}
+
+header {
+    display: flex; /* Added */
+    justify-content: center;
+    align-items: center; /* Added */
+    padding: 20px;
+}
+
+header,
+main {
+    margin: 0 auto;
+    max-width: 800px; /* Moved max-width to header and main */
+}
+
+h1 {
+    font-size: 2rem;
+}
+nav {
+    margin-top: 20px; /* Add space between h1 and nav */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display:contents; /* Display navigation links horizontally */
+    margin-right: 10px; /* Add spacing between navigation links */
+}
+nav li:first-child {
+    display: block; /* Display the first navigation link vertically */
+    margin-bottom: 10px; /* Add spacing between the first navigation link and the rest */
+}
+
+nav {
+    background-color: #36454f;
+    margin: 0 auto;
+    max-width: 800px;
+}
+nav {
+    background-color: rgb(51, 51, 51);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0; /* Added */
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background color change on hover */
+}
+
+
+a {
+    color: aliceblue;
+}
+
+section {
+    display: flex;
+    gap: 4px;
+    border: none; /* Changed border-style to border */
+    margin: 1rem;
+}
+
+h1,
+footer {
+    color: aliceblue;
+    background-color: rgb(50, 123, 204);
+    padding: 10px; /* Added padding */
+}
+
+.card {
+    display: flex;
+    gap: 4px;
+}
+
+.container-1{
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(51, 51, 51);
+    width: 70%; /* Removed width and height */
+    height: 400px;
+    align-items: center;
+    border-color: rgb(163,163,163);
+}
+.container-2{
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(51, 51, 51);
+    width: 30%; /* Removed width and height */
+    height: 400px;
+    align-items: center;
+    border-color: rgb(163,163,163);
+}
+footer{
+    display:flex;
+    justify-content: center;
+}
+h2{
+    justify-content: center;
+}
+.right-image {
+    float: right; /* Float the image to the right */
+    margin-left: 10px;
+    margin-bottom: 10px;
+}

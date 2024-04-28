@@ -4,39 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals - TUYISHIME Eric</title>
-    <meta  name="description" content="Dynamic web foundementals">
+    <meta name="description" content="Dynamic web fundamentals">
     <meta name="author" content="TUYISHIME Eric">
+    <link rel="stylesheet" href="styles/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <style>
+        /* Add any additional CSS styles here */
+    </style>
 </head>
 <body>
     <header>
         <h1>WDD 131 - Dynamic Web Fundamentals - TUYISHIME Eric</h1>
         <nav>
-            <a href="https://linkedin.com">LinkedIn</a>
-            <a href="https://byui.instructure.com">I-Learn</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
-            <a href="#">Final Project</a>
+            <ul>
+                <li><a href="https://linkedin.com">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
         </nav>
     </header>
-    <section id="card">
-        <h1>About Me</h1>
-        <p>This is my journey of how i started running software development with BYU pathway, even though 
-            it is hard i believe i will make it.
-        </p>
+    <main>
+        
+        <section class="card">
+            <div class="container-1">
+                <h2>About Me</h2>
+                <p>This is my journey of how I started running software development with BYU Pathway, even though it is hard, I believe I will make it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et placeat laudantium nihil sapiente dolorem voluptates quod adipisci autem ex natus quia, earum reiciendis atque commodi necessitatibus. Iusto distinctio earum sint. <img src="images/profile-pic.png" alt="profile" class="right-image"></p>
+                <h3>TUYISHIME Eric from Rwanda</h3>
+                <p><img src="images/RwandaNationalflag.png" alt="RwandaNationalflag"> Our country is the land of 1000 hills; it is very known for the Unique Silverback Gorillas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione numquam sunt, amet nisi consequuntur expedita quibusdam.</p>
+            </div>
+            <div class="container-2">
+                <h2>Web Dev Resources</h2>
+                <nav>
+                    <ul>
+                        <li><a href="https://www.w3schools.com">w3schools</a></li>
+                        <li><a href="https://www.freecodecamp.org">freecodecamp</a></li>
 
-    </section>
-    <section id="card">
-        <h2>Web Dev Resources</h2>
-        <nav>
+                        <li><a href="https://wwww.codeland.com">codeland</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </section>
+        <section class="card">
+            <h2>Additional Resources</h2>
+            <p>Explore more resources to enhance your web development skills:</p>
             <ul>
-        <li><a href="https://www.w3school.com">w3school</a></li>
-        <li><a href="https://www.freecodecamp.com">freecodecamp</a></li>
-        </ul>
-        </nav>
+                <li><a href="https://www.codecademy.com">Codecademy</a></li>
+                <li><a href="https://css-tricks.com">CSS-Tricks</a></li>
+                <li><a href="https://stackoverflow.com">Stack Overflow</a></li>
+            </ul>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> TUYISHIME Eric Rwanda</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        // Update current year
+        document.getElementById('currentYear').innerText = new Date().getFullYear();
 
-    </section>
+        // Display last modified date
+        document.getElementById('lastModified').innerText = "Last modified: " + document.lastModified;
+    </script>
 </body>
-<footer>
-    <p>&copy;</p>
-    <p id="last_modified"></p>
-</footer>
 </html>
