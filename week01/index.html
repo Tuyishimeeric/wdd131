@@ -8,9 +8,7 @@
     <meta name="author" content="TUYISHIME Eric">
     <link rel="stylesheet" href="styles/base.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <style>
-        /* Add any additional CSS styles here */
-    </style>
+    <script src="scripts/gatedates.js" defer></script>
 </head>
 <body>
     <header>
@@ -61,12 +59,5 @@
         <p>&copy;<span id="currentYear"></span> TUYISHIME Eric Rwanda</p>
         <p id="lastModified"></p>
     </footer>
-    <script>
-        // Update current year
-        document.getElementById('currentYear').innerText = new Date().getFullYear();
-
-        // Display last modified date
-        document.getElementById('lastModified').innerText = "Last modified: " + document.lastModified;
-    </script>
 </body>
 </html>
