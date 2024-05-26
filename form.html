@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+  
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+            <fieldset>
+                <legend>Product Information</legend>
+                <div class="form-group">
+                    <label for="productName">Product Name:</label>
+                    <select id="productName" name="productName" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                  
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+               
+                <div class="form-group">
+                    <label>Overall Rating:</label>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5">☆</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">☆</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">☆</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">☆</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">☆</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Date of Installation</legend>
+                <div class="form-group">
+                    <label for="installationDate">Date of Installation:</label>
+                    <input type="date" id="installationDate" name="installationDate" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Useful Features</legend>
+              
+                <div class="form-group">
+                    <label>Useful Features:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="feature1" name="feature" value="feature1">
+                        <label for="feature1">Feature 1</label><br>
+                        <input type="checkbox" id="feature2" name="feature" value="feature2">
+                        <label for="feature2">Feature 2</label><br>
+                        <input type="checkbox" id="feature3" name="feature" value="feature3">
+                        <label for="feature3">Feature 3</label><br>
+                        
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Written Review</legend>
+                <div class="form-group">
+                    <label for="writtenReview">Written Review:</label>
+                    <textarea id="writtenReview" name="writtenReview"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>User Name</legend>
+                <div class="form-group">
+                    <label for="userName">User Name:</label>
+                    <input type="text" id="userName" name="userName">
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+              
+                <input type="submit" value="Submit Review">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TUYISHIME. All rights reserved.</p>
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+</html>
