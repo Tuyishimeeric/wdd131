@@ -1,7 +1,7 @@
 
+
 const currentYear = new Date().getFullYear();
 document.getElementById("currentYear").textContent = currentYear;
-
 
 function displayProducts() {
     const productContainer = document.getElementById("productContainer");
@@ -10,22 +10,45 @@ function displayProducts() {
     const products = [
         {
             name: "Product 1",
-            price: 29.99,
-            imageUrl: "product1.jpg",
+            price: 399.99,
+            imageUrl: "images/product1.jpg",
             description: "Description of Product 1"
         },
         {
             name: "Product 2",
-            price: 39.99,
-            imageUrl: "product2.jpg",
+            price: 499.99,
+            imageUrl: "images/product2.jpg",
             description: "Description of Product 2"
         },
-    
+        {
+            name: "Product 3",
+            price: 99.99,
+            imageUrl: "images/product3.jpg",
+            description: "Description of Product 2"
+        },
+        {
+            name: "Product 1",
+            price: 399.99,
+            imageUrl: "images/product1.jpg",
+            description: "Description of Product 1"
+        },
+        {
+            name: "Product 2",
+            price: 499.99,
+            imageUrl: "images/product2.jpg",
+            description: "Description of Product 2"
+        },
+        {
+            name: "Product 3",
+            price: 99.99,
+            imageUrl: "images/product3.jpg",
+            description: "Description of Product 2"
+        },
+
     ];
 
 
     productContainer.innerHTML = "";
-
 
     products.forEach(product => {
         const productCard = document.createElement("div");
