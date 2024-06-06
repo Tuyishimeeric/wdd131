@@ -1,19 +1,16 @@
-function toggleNav() {
-    var nav = document.querySelector('nav');
-    nav.classList.toggle('show');
-}
-
 document.addEventListener("DOMContentLoaded", function() {
 
     var currentYear = new Date().getFullYear();
     document.getElementById("currentYear").textContent = currentYear;
 
-    
     var lastModifiedDate = new Date(document.lastModified);
     var options = { year: 'numeric', month: 'long', day: 'numeric' };
     var formattedDate = lastModifiedDate.toLocaleDateString('en-US', options);
     document.getElementById("lastModified").textContent = "Last modified: " + formattedDate;
+
+    displayTemples("Home");
 });
+
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -70,29 +67,13 @@ const temples = [
         area: 116642,
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg",
         alt: "Mexico City Mexico Temple"
-    },
-  
+    }
 ];
 
-
-const templeContainer = document.getElementById("templeContainer");
-
-temples.forEach((temple) => {
-    const templeCard = document.createElement("div");
-    templeCard.classList.add("temple-card");
-
-    templeCard.innerHTML = `
-        <img src="${temple.imageUrl}" alt="${temple.alt}" class="temple-image" loading="lazy">
-        <div class="temple-details">
-            <h2 class="temple-name">${temple.templeName}</h2>
-            <p class="temple-location"><strong>Location:</strong> ${temple.location}</p>
-            <p class="temple-dedicated"><strong>Dedicated:</strong> ${temple.dedicated}</p>
-            <p class="temple-area"><strong>Area:</strong> ${temple.area.toLocaleString()} square feet</p>
-        </div>
-    `;
-
-    templeContainer.appendChild(templeCard);
-});
+function toggleNav() {
+    var nav = document.querySelector('nav');
+    nav.classList.toggle('show');
+}
 
 function filterTemples(criteria) {
     switch (criteria) {
@@ -109,10 +90,10 @@ function filterTemples(criteria) {
     }
 }
 
-
 function displayTemples(criteria) {
     const filteredTemples = filterTemples(criteria);
 
+    const templeContainer = document.getElementById("templeContainer");
     templeContainer.innerHTML = "";
 
     filteredTemples.forEach((temple) => {
@@ -133,12 +114,11 @@ function displayTemples(criteria) {
     });
 }
 
-
 const navItems = document.querySelectorAll('.nav-item');
 navItems.forEach(item => {
     item.addEventListener('click', (event) => {
+        event.preventDefault();
         const criteria = event.target.innerText; 
         displayTemples(criteria);
     });
 });
-

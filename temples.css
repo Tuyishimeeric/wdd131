@@ -10,19 +10,19 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    position:relative;
+    position: relative;
 }
-h1{
+h1 {
     display: inline-block;
     margin-right: auto;
 }
 
 nav {
-    display: none; 
+    display: none;
     justify-content: flex-end;
-    position:absolute;
+    position: absolute;
     top: 50%;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
     right: 20px;
 }
 nav.show {
@@ -64,11 +64,10 @@ nav a:hover {
     }
 }
 
-
 main {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px;
 }
 
 .grid-container {
@@ -77,12 +76,37 @@ main {
     gap: 20px;
 }
 
-figure {
-    margin: 0;
+.temple-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
 }
 
-figcaption {
+.temple-card:hover {
+    transform: scale(1.05);
+}
+
+.temple-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.temple-details {
+    padding: 20px;
     text-align: center;
 }
 
+.temple-name {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
 
+.temple-location,
+.temple-dedicated,
+.temple-area {
+    margin: 5px 0;
+    font-size: 1em;
+}
