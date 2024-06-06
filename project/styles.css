@@ -93,122 +93,50 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
 }
 
 /* Contact form styles */
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
 }
 
 .contact-form label {
-    font-weight: bold;
-    color: #333;
-    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
 }
 
-.contact-form input,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
 .contact-form textarea {
+    width: 100%;
     padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1em;
-    font-family: 'Roboto', sans-serif;
+}
+
+.contact-form textarea {
+    resize: vertical;
 }
 
 .contact-form button {
-    padding: 10px;
     background-color: #333;
     color: white;
     border: none;
+    padding: 10px 20px;
+    cursor: pointer;
     border-radius: 5px;
     font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .contact-form button:hover {
     background-color: #555;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    .product-card {
-        padding: 10px;
-    }
-}
-
-/* Grid container styles */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-/* Product card styles */
-.product-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-}
-
-.product-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
-    loading: lazy; /* Native lazy loading */
-}
-
-/* Site information styles */
-#siteInfo {
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#siteInfo h2 {
-    font-size: 1.75em;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-#siteInfo h3 {
-    font-size: 1.5em;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-#siteInfo p, #siteInfo ul {
-    font-size: 1em;
-    margin-bottom: 20px;
-}
-
-#siteInfo ul {
-    padding-left: 20px;
-}
-
-#siteInfo li {
-    margin-bottom: 10px;
 }
