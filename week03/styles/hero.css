@@ -1,8 +1,8 @@
 /* Global CSS variables */
 :root {
-    --primary-color: #D21034; /* Red color from the flag of Madagascar */
-    --secondary-color: #007E3A; /* Green color from the flag of Madagascar */
-    --text-color: #333; /* Dark gray text color */
+    --primary-color: #D21034;
+    --secondary-color: #007E3A;
+    --text-color: #333;
 }
 
 /* Typography */
@@ -15,12 +15,13 @@ body {
 h1, h2 {
     color: var(--primary-color);
 }
+
 /* Layout and components */
-header {
+header, footer {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .hero {
@@ -37,25 +38,16 @@ header {
     color: white;
     padding: 20px;
 }
-.weather-icon::after {
-    content: "\26C5"; /* Unicode character for a sun emoji */
-    font-size: 2em;
+.weather-icon {
+    fill: white; /* Set the fill color for the SVG icon */
+    width: 24px; /* Adjust size if needed */
+    height: 24px;
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-/* Media queries */
-@media screen and (min-width: 768px) {
-    .weather-icon::after {
-        content: ""; /* Clear content for larger view */
-    }
+    padding: 10px 0;
 }
 

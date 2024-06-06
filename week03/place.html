@@ -10,23 +10,22 @@
 <body>
     <header>
         <h1>Place Page</h1>
-        
     </header>
     <main>
         <section class="hero">
-            <img src="images/hero3.webp" srcset="images/hero-small.webp 600w, images/hero-medium.webp 900w, images/hero-large.webp 1200w" alt="Hero Image">
+            <!-- Use srcset for responsive images in WebP format -->
+            <img src="images/hero3.webp" srcset="images/hero3.webp 600w, images/hero3.webp 900w, images/hero3.webp 1200w" alt="Hero Image">
         </section>
         <section class="weather">
             <h2>Weather</h2>
-            
-            <img src="images/" alt="Weather Icon" class="weather-icon">
-    
+            <!-- Provide a complete SVG weather icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="weather-icon">
+                <path fill="#FFF" d="M6 2h4v11H6zM15 10h4v11h-4zM11 4v11h-1V4H7v16H6V3h5zM17 21v-5h1v5zM17 4h1v7h-1z"/>
+            </svg>
             <p>Temperature: 25°C</p>
             <p>Wind Speed: 10 km/h</p>
-           
             <p>Windchill: <span id="windchill"></span></p>
         </section>
-        
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> | Last modified: <span id="lastModified"></span></p>
