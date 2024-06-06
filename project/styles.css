@@ -1,5 +1,5 @@
 /* Reset some default browser styles */
-body, h1, h2, h3, p, ul {
+body, h1, h2, h3, p, ul, form, label {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,7 +21,6 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    position: relative;
 }
 
 header h1 {
@@ -177,6 +176,7 @@ footer {
     width: 100%;
     height: auto;
     border-radius: 10px 10px 0 0;
+    loading: lazy; /* Native lazy loading */
 }
 
 /* Site information styles */
