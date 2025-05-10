@@ -29,10 +29,12 @@ header {
     padding: 20px;
     background-color: #36454f;
 }
-
-h1 {
-    color: aliceblue;
+h1{
+   color: aliceblue;
     margin-bottom: 10px;
+}
+h2{
+    background-color:rgb(50, 123, 204);
 }
 
 nav {
