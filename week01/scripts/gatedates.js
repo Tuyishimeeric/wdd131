@@ -1,11 +1,14 @@
-// Get the current year
-const currentYear = new Date().getFullYear();
+document.addEventListener("DOMContentLoaded", () => {
+    // Set current year
+    const currentYear = new Date().getFullYear();
+    document.querySelector('#currentYear').textContent = currentYear;
 
-// Update the copyright year in the footer's first paragraph
-document.querySelector('#currentYear').textContent = currentYear;
+    // Format and set last modified date
+    const lastModified = new Date(document.lastModified);
+    const formattedDate = lastModified.toLocaleString('en-US', {
+        dateStyle: 'medium',
+        timeStyle: 'short'
+    });
 
-// Get the last modified date of the document
-const lastModifiedDate = document.lastModified;
-
-// Update the last modified date in the footer's second paragraph
-document.querySelector('#lastModified').textContent = `Last modified: ${lastModifiedDate}`;
+    document.querySelector('#lastModified').textContent = `Last Modified: ${formattedDate}`;
+});
