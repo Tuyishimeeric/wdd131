@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Weather</h1>
+    <div class="hero">
+      <picture>
+        <source srcset="images/hero1.webp" media="(max-width: 500px)">
+        <source srcset="images/hero2.webp" media="(max-width: 1000px)">
+        <img srcset="images/hero3.webp" alt="Scenic Weather Image" width="100%" height="auto">
+      </picture>
+    </div>
+  </header>
+
+  <main>
+    <section id="weather">
+      <h2>Weather Today</h2>
+      <div id="weather-icon">
+        <svg xmlns="images/svg2.webp" viewBox="0 0 100 100" width="50" height="50">
+          <circle cx="50" cy="50" r="45" stroke="black" stroke-width="3" fill="yellow"/>
+          <line x1="50" y1="5" x2="50" y2="15" stroke="orange" stroke-width="3"/>
+          <line x1="50" y1="95" x2="50" y2="85" stroke="orange" stroke-width="3"/>
+        </svg>
+      </div>
+      <p>Temperature: <span id="temp">5°C</span></p>
+      <p>Wind Speed: <span id="wind-speed">10 km/h</span></p>
+      <p>Windchill Factor: <span id="windchill">Calculating...</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Current Year: <span id="current-year"></span></p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+  </footer>
+
+</body>
+</html>

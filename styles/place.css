@@ -1,0 +1,70 @@
+/* Global CSS Variables */
+:root {
+  --main-bg-color: #f0f8ff;
+  --accent-color: #0077b6;
+  --text-color: #333;
+  --highlight-color: #ff7b00;
+  --font-family: 'Arial', sans-serif;
+}
+
+/* Basic Styles */
+body {
+  font-family: var(--font-family);
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--accent-color);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+#weather {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+#weather-icon {
+  display: none; /* Hide the SVG initially on mobile */
+}
+
+@media (min-width: 1000px) {
+  #weather-icon::after {
+    content: '⛅'; /* Emoticon for weather icon on larger screens */
+    font-size: 2rem;
+  }
+  #weather-icon {
+    display: block;
+  }
+}
+
+footer {
+  background-color: var(--accent-color);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Pseudo-element for Weather Icon on Larger Screens */
+#weather h2::after {
+  content: ' ⛅';
+}
