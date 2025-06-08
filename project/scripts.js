@@ -44,7 +44,78 @@ function displayProducts() {
             imageUrl: "images/product3.jpg",
             description: "Description of Product 2"
         },
-
+        {
+            name: "Product 1",
+            price: 399.99,
+            imageUrl: "images/product1.jpg",
+            description: "Description of Product 1"
+        },
+        {
+            name: "Product 2",
+            price: 499.99,
+            imageUrl: "images/product2.jpg",
+            description: "Description of Product 2"
+        },
+        {
+            name: "Product 3",
+            price: 99.99,
+            imageUrl: "images/product3.jpg",
+            description: "Description of Product 2"
+        },
+        {
+            name: "Product 1",
+            price: 399.99,
+            imageUrl: "images/product1.jpg",
+            description: "Description of Product 1"
+        },
+        {
+            name: "Product 2",
+            price: 499.99,
+            imageUrl: "images/product2.jpg",
+            description: "Description of Product 2"
+        },
+        {
+            name: "Product 3",
+            price: 99.99,
+            imageUrl: "images/product3.jpg",
+            description: "Description of Product 2"
+        },
+        {
+            name: "Product 1",
+            price: 399.99,
+            imageUrl: "images/product1.jpg",
+            description: "Description of Product 1"
+        },
+        {
+            name: "Product 2",
+            price: 499.99,
+            imageUrl: "images/product2.jpg",
+            description: "Description of Product 2"
+        },
+        {
+            name: "Product 3",
+            price: 99.99,
+            imageUrl: "images/product3.jpg",
+            description: "Description of Product 2"
+        },
+        {
+            name: "Product 1",
+            price: 399.99,
+            imageUrl: "images/product1.jpg",
+            description: "Description of Product 1"
+        },
+        {
+            name: "Product 2",
+            price: 499.99,
+            imageUrl: "images/product2.jpg",
+            description: "Description of Product 2"
+        },
+        {
+            name: "Product 3",
+            price: 99.99,
+            imageUrl: "images/product3.jpg",
+            description: "Description of Product 2"
+        },
     ];
 
 
